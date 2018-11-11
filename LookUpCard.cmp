@@ -1,0 +1,14 @@
+<!-- LookUpCard -->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+	
+    <lightning:card footer="Card Footer" title="Lookup">
+        <p class="slds-p-horizontal_small">
+        	<c:CustomLookUpComp iconName="standard:contact"
+                        methodName="c.getContacts"
+                        singleSelect="false"
+                        sObject="Account"
+                        />   
+        </p>
+    </lightning:card>
+    
+</aura:component>
